@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if prof in ['инженер', 'строитель'] %}
+    <h1 class="text-center">Инженерные тренажеры</h1>
+    <img src="../static/img/zvezdnyj-put-chertezhi.jpg" width="1000px">
+{% else %}
+    <h1 class="text-center">Научные симуляторы</h1>
+    <img src="../static/img/11115186-1606429524.jpg" width="1000px">
+{% endif %}
+{% endblock%}
