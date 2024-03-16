@@ -64,5 +64,11 @@ def success():
     return 'Форма отправлена'
 
 
+@app.route('/distribution')
+def distribution():
+    return render_template('distribution.html', title='Пассажиры', passengers=['Ридди Скот',
+                                                                               'Энди Уир', 'Марк Уотни'])
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
