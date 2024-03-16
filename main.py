@@ -24,5 +24,21 @@ def list_prof(list_type):
     return render_template('professions.html', title='Профессии', list_type=list_type, profs=professions)
 
 
+@app.route('/answer')
+@app.route('/auto_answer')
+def answer():
+    ans = {
+        'title': 'ответы',
+        'surname': 'Иванов',
+        'name': 'Иван',
+        'education': 'выше среднего',
+        'profession': 'пилот',
+        'sex': 'мужчина',
+        'motivation': 'осваивание Марса',
+        'ready': 'Да'
+    }
+    return render_template('auto_answer.html', **ans)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')

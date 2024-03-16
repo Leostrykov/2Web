@@ -1,6 +1,6 @@
 h1, h2, h3, h4 {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .first {
@@ -13,4 +13,8 @@ h1, h2, h3, h4 {
 
 .error {
     color: red;
+}
+
+.form-answers {
+    padding: 20px;
 }
