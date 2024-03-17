@@ -4,6 +4,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, FileField
 from wtforms.validators import DataRequired
 import os
+import json
+from random import choice
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
@@ -88,6 +90,15 @@ def galery():
         images.append(f.filename)
         return redirect('/galery')
     return render_template('images.html', title='Галерея', images=images, form=form)
+
+
+@app.route('/member')
+def member():
+    with open('templates/pers.json', 'r', encoding='utf8') as jsonfile:
+        data = json.loads(jsonfile.read())
+    print(data)
+    pers = choice(data['pers'])
+    return render_template('members.html', title='Группа', **pers)
 
 
 if __name__ == '__main__':

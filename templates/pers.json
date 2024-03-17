@@ -1,0 +1,24 @@
+{
+  "pers": [
+    {
+      "name": "Ридди Скотт",
+      "photo": "930271-inoplanetiane-kartinki-dlia-detei-9.jpg",
+      "edu": "астролог, капитан"
+    },
+    {
+      "name": "Энди Уир",
+      "photo": "1653686199_5-kartinkof-club-p-kartinka-veselii-inoplanetyanin-dlya-detei-5.png",
+      "edu": "пилот марсохода, инженер"
+    },
+    {
+      "name": "Марк Уотни",
+      "photo": "1673557296_gas-kvas-com-p-detskii-inoplanetyanin-risunok-48.png",
+      "edu": "врач"
+    },
+    {
+      "name": "Венката Капур",
+      "photo": "1673557280_gas-kvas-com-p-detskii-inoplanetyanin-risunok-28.png",
+      "edu": "климатолог, врач"
+    }
+  ]
+}
