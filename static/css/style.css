@@ -1,5 +1,4 @@
 h1, h2, h3, h4 {
-    margin-left: 20px;
     margin-top: 20px;
 }
 
@@ -38,4 +37,12 @@ h1, h2, h3, h4 {
 .center-image {
     display: block;
     margin: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    margin-bottom: 20px;
 }

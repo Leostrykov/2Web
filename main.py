@@ -6,6 +6,8 @@ from wtforms.validators import DataRequired
 import os
 import json
 from random import choice
+from data import db_session
+from data.jobs import Jobs
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
@@ -101,5 +103,13 @@ def member():
     return render_template('members.html', title='Группа', **pers)
 
 
+@app.route('/')
+def jobs():
+    db_sess = db_session.create_session()
+    jobs_list = db_sess.query(Jobs).all()
+    return render_template('jobs.html', title='Работы', jobs=jobs_list)
+
+
 if __name__ == '__main__':
+    db_session.global_init('db/jobs.db')
     app.run(port=8080, host='127.0.0.1')
